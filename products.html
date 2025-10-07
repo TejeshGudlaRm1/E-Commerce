@@ -1,0 +1,90 @@
+<!-- This file contains only the content for the products page. -->
+<div>
+    <div class="flex justify-between items-center mb-6">
+        <h2 class="text-2xl font-bold text-white">Manage Products</h2>
+        <button class="bg-accent-gold text-gray-900 font-bold py-2 px-4 rounded-lg hover:bg-amber-600 transition flex items-center">
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
+            Add Product
+        </button>
+    </div>
+
+    <!-- Product Table -->
+    <div class="bg-gray-800 p-2 rounded-xl shadow-lg">
+        <div class="overflow-x-auto">
+            <table class="w-full text-sm text-left text-gray-400">
+                 <thead class="text-xs text-gray-300 uppercase bg-gray-700/50">
+                    <tr>
+                        <th scope="col" class="px-6 py-3">Product Name</th>
+                        <th scope="col" class="px-6 py-3">Category</th>
+                        <th scope="col" class="px-6 py-3">Price</th>
+                        <th scope="col" class="px-6 py-3">Stock</th>
+                        <th scope="col" class="px-6 py-3">Status</th>
+                        <th scope="col" class="px-6 py-3 text-right">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Product 1 -->
+                    <tr class="border-b border-gray-700 hover:bg-gray-700/50">
+                        <th scope="row" class="px-6 py-4 font-medium text-white whitespace-nowrap flex items-center">
+                            <img src="https://placehold.co/40x40/374151/d1d5db?text=P1" class="w-10 h-10 rounded-md mr-4">
+                            Elegant Gold Watch
+                        </th>
+                        <td class="px-6 py-4">Accessories</td>
+                        <td class="px-6 py-4">$499.99</td>
+                        <td class="px-6 py-4">150</td>
+                        <td class="px-6 py-4"><span class="bg-green-500/20 text-green-400 text-xs font-medium px-2.5 py-0.5 rounded-full">Active</span></td>
+                        <td class="px-6 py-4 text-right space-x-2">
+                            <button class="font-medium text-blue-500 hover:underline">Edit</button>
+                            <button class="font-medium text-red-500 hover:underline">Delete</button>
+                        </td>
+                    </tr>
+                    <!-- Product 2 -->
+                    <tr class="border-b border-gray-700 hover:bg-gray-700/50">
+                        <th scope="row" class="px-6 py-4 font-medium text-white whitespace-nowrap flex items-center">
+                            <img src="https://placehold.co/40x40/374151/d1d5db?text=P2" class="w-10 h-10 rounded-md mr-4">
+                            Silk Blend Scarf
+                        </th>
+                        <td class="px-6 py-4">Apparel</td>
+                        <td class="px-6 py-4">$79.00</td>
+                        <td class="px-6 py-4">300</td>
+                        <td class="px-6 py-4"><span class="bg-green-500/20 text-green-400 text-xs font-medium px-2.5 py-0.5 rounded-full">Active</span></td>
+                        <td class="px-6 py-4 text-right space-x-2">
+                            <button class="font-medium text-blue-500 hover:underline">Edit</button>
+                            <button class="font-medium text-red-500 hover:underline">Delete</button>
+                        </td>
+                    </tr>
+                     <!-- Product 3 -->
+                    <tr class="border-b border-gray-700 hover:bg-gray-700/50">
+                        <th scope="row" class="px-6 py-4 font-medium text-white whitespace-nowrap flex items-center">
+                            <img src="https://placehold.co/40x40/374151/d1d5db?text=P3" class="w-10 h-10 rounded-md mr-4">
+                            Leather Messenger Bag
+                        </th>
+                        <td class="px-6 py-4">Bags</td>
+                        <td class="px-6 py-4">$250.00</td>
+                        <td class="px-6 py-4">50</td>
+                        <td class="px-6 py-4"><span class="bg-yellow-500/20 text-yellow-400 text-xs font-medium px-2.5 py-0.5 rounded-full">Low Stock</span></td>
+                        <td class="px-6 py-4 text-right space-x-2">
+                            <button class="font-medium text-blue-500 hover:underline">Edit</button>
+                            <button class="font-medium text-red-500 hover:underline">Delete</button>
+                        </td>
+                    </tr>
+                    <!-- Product 4 -->
+                    <tr class="hover:bg-gray-700/50">
+                        <th scope="row" class="px-6 py-4 font-medium text-white whitespace-nowrap flex items-center">
+                            <img src="https://placehold.co/40x40/374151/d1d5db?text=P4" class="w-10 h-10 rounded-md mr-4">
+                            Vintage Denim Jacket
+                        </th>
+                        <td class="px-6 py-4">Apparel</td>
+                        <td class="px-6 py-4">$120.00</td>
+                        <td class="px-6 py-4">0</td>
+                        <td class="px-6 py-4"><span class="bg-red-500/20 text-red-400 text-xs font-medium px-2.5 py-0.5 rounded-full">Out of Stock</span></td>
+                        <td class="px-6 py-4 text-right space-x-2">
+                            <button class="font-medium text-blue-500 hover:underline">Edit</button>
+                            <button class="font-medium text-red-500 hover:underline">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

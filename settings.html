@@ -1,0 +1,42 @@
+<!-- This file contains only the content for the settings page. -->
+<div>
+    <h2 class="text-2xl font-bold text-white mb-6">Settings</h2>
+    
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <!-- Left column for navigation/tabs -->
+        <div class="lg:col-span-1">
+             <div class="bg-gray-800 p-4 rounded-xl shadow-lg">
+                <nav class="flex flex-col space-y-2">
+                    <a href="#" class="font-semibold text-white bg-gray-700/50 p-3 rounded-lg">Store Profile</a>
+                    <a href="#" class="text-gray-400 hover:bg-gray-700/50 hover:text-white p-3 rounded-lg">Payment Gateways</a>
+                    <a href="#" class="text-gray-400 hover:bg-gray-700/50 hover:text-white p-3 rounded-lg">Shipping</a>
+                    <a href="#" class="text-gray-400 hover:bg-gray-700/50 hover:text-white p-3 rounded-lg">Account & Security</a>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Right column for form content -->
+        <div class="lg:col-span-2">
+            <div class="bg-gray-800 p-6 rounded-xl shadow-lg">
+                <h3 class="text-xl font-bold text-white mb-6">Store Profile</h3>
+                <form class="space-y-6">
+                    <div>
+                        <label for="store-name" class="block mb-2 text-sm font-medium text-gray-300">Store Name</label>
+                        <input type="text" id="store-name" value="RM1 Luxury Fashion" class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-amber-500 focus:border-amber-500 block w-full p-2.5">
+                    </div>
+                    <div>
+                        <label for="store-email" class="block mb-2 text-sm font-medium text-gray-300">Contact Email</label>
+                        <input type="email" id="store-email" value="contact@rm1.com" class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-amber-500 focus:border-amber-500 block w-full p-2.5">
+                    </div>
+                     <div>
+                        <label for="store-address" class="block mb-2 text-sm font-medium text-gray-300">Store Address</label>
+                        <textarea id="store-address" rows="3" class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-amber-500 focus:border-amber-500 block w-full p-2.5">123 Fashion Ave, Style City, 10001</textarea>
+                    </div>
+                    <div class="pt-2">
+                         <button type="submit" class="bg-accent-gold text-gray-900 font-bold py-2.5 px-5 rounded-lg hover:bg-amber-600 transition">Save Changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | RM1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Montserrat:wght@400;500;600&display=swap');
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #111827;
+            color: #d1d5db;
+        }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Playfair Display', serif; }
+        .bg-accent-gold { background-color: #f59e0b; }
+        .hover\:bg-accent-gold-darker:hover { background-color: #d97706; }
+        .text-accent-gold { color: #f59e0b; }
+    </style>
+</head>
+<body class="bg-gray-900">
+
+    <div class="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+        <div class="w-full max-w-4xl mx-auto bg-gray-800 rounded-2xl shadow-2xl overflow-hidden flex flex-col md:flex-row">
+            
+            <!-- Left Side: Banner/Logo -->
+            <div class="w-full md:w-1/2 p-8 sm:p-12 flex flex-col items-center justify-center bg-gray-900/50" style="background: linear-gradient(135deg, #1f2937 0%, #111827 100%);">
+                <a href="index1.html">
+                    <img src="Assets/SWACHIFY gif.gif" alt="Company Logo" class="w-48 h-auto object-contain rounded-lg shadow-lg">
+                </a>
+                <h1 class="text-3xl font-bold text-white mt-6 text-center">Welcome Back</h1>
+                <p class="text-gray-400 mt-2 text-center">Sign in to access your exclusive account.</p>
+            </div>
+
+            <!-- Right Side: Form -->
+            <div class="w-full md:w-1/2 p-8 sm:p-12">
+                <h2 class="text-center text-3xl font-extrabold text-white">
+                    Sign in
+                </h2>
+                <form id="loginForm" class="mt-8 space-y-6" onsubmit="handleLogin(event)">
+                    <div class="rounded-md shadow-sm -space-y-px">
+                        <div>
+                            <label for="email-address" class="sr-only">Email address</label>
+                            <input id="email-address" name="email" type="email" autocomplete="email" required 
+                                   class="appearance-none rounded-none relative block w-full px-3 py-3 border border-gray-700 bg-gray-900 text-white placeholder-gray-500 focus:outline-none focus:ring-amber-500 focus:border-amber-500 focus:z-10 sm:text-sm rounded-t-md" 
+                                   placeholder="Email address">
+                        </div>
+                        <div>
+                            <label for="password" class="sr-only">Password</label>
+                            <input id="password" name="password" type="password" autocomplete="current-password" required 
+                                   class="appearance-none rounded-none relative block w-full px-3 py-3 border border-gray-700 bg-gray-900 text-white placeholder-gray-500 focus:outline-none focus:ring-amber-500 focus:border-amber-500 focus:z-10 sm:text-sm rounded-b-md" 
+                                   placeholder="Password">
+                        </div>
+                    </div>
+
+                    <div class="text-sm text-center">
+                        <p id="errorMessage" class="text-red-500 h-4"></p>
+                    </div>
+
+                    <div>
+                        <button type="submit" 
+                                class="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-bold rounded-md text-gray-900 bg-accent-gold hover:bg-accent-gold-darker focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-500 transition">
+                            Sign in
+                        </button>
+                    </div>
+
+                     <div class="text-sm text-center">
+                        <p class="text-gray-400">
+                            Don't have an account?
+                            <a href="signup.html" class="font-medium text-accent-gold hover:text-amber-400">
+                                Sign up
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="text-sm text-center pt-4 border-t border-gray-700">
+                        <a href="index1.html" class="font-medium text-gray-400 hover:text-accent-gold transition">
+                            &larr; Back to Home Page
+                        </a>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="validation.js"></script>
+</body>
+</html>
+

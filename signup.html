@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | RM1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Montserrat:wght@400;500;600&display=swap');
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #111827;
+            color: #d1d5db;
+        }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Playfair Display', serif; }
+        .bg-accent-gold { background-color: #f59e0b; }
+        .hover\:bg-accent-gold-darker:hover { background-color: #d97706; }
+        .text-accent-gold { color: #f59e0b; }
+    </style>
+</head>
+<body class="bg-gray-900">
+
+    <div class="min-h-screen flex flex-col items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+        <div class="w-full max-w-md space-y-8">
+            <div>
+                <a href="index.html">
+                     <img src="Assets\SWACHIFY gif.gif" alt="RM1 Logo" class="mx-auto h-16 w-auto">
+                </a>
+                <h2 class="mt-6 text-center text-3xl font-extrabold text-white">
+                    Create your account
+                </h2>
+            </div>
+            <form id="signupForm" class="mt-8 space-y-6 bg-gray-800 p-8 rounded-lg shadow-xl" onsubmit="handleSignup(event)">
+                <div class="rounded-md shadow-sm space-y-4">
+                    <div>
+                        <input id="name" name="name" type="text" required class="appearance-none rounded-md relative block w-full px-3 py-3 border border-gray-700 bg-gray-900 text-white placeholder-gray-500 focus:outline-none focus:ring-amber-500 focus:border-amber-500 sm:text-sm" placeholder="Full Name">
+                    </div>
+                    <div>
+                        <input id="email-address" name="email" type="email" autocomplete="email" required class="appearance-none rounded-md relative block w-full px-3 py-3 border border-gray-700 bg-gray-900 text-white placeholder-gray-500 focus:outline-none focus:ring-amber-500 focus:border-amber-500 sm:text-sm" placeholder="Email address">
+                    </div>
+                    <div>
+                        <input id="password" name="password" type="password" required class="appearance-none rounded-md relative block w-full px-3 py-3 border border-gray-700 bg-gray-900 text-white placeholder-gray-500 focus:outline-none focus:ring-amber-500 focus:border-amber-500 sm:text-sm" placeholder="Password (min. 8 characters)">
+                    </div>
+                    <div>
+                        <input id="confirm-password" name="confirm-password" type="password" required class="appearance-none rounded-md relative block w-full px-3 py-3 border border-gray-700 bg-gray-900 text-white placeholder-gray-500 focus:outline-none focus:ring-amber-500 focus:border-amber-500 sm:text-sm" placeholder="Confirm Password">
+                    </div>
+                </div>
+
+                <div class="text-sm text-center">
+                    <p id="errorMessage" class="text-red-500 h-4"></p>
+                </div>
+
+                <div>
+                    <button type="submit" class="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-bold rounded-md text-gray-900 bg-accent-gold hover:bg-accent-gold-darker focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-500 transition">
+                        Sign up
+                    </button>
+                </div>
+                 <div class="text-sm text-center">
+                    <p class="text-gray-400">
+                        Already have an account?
+                        <a href="login.html" class="font-medium text-accent-gold hover:text-amber-400">
+                            Sign in
+                        </a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="validation.js"></script>
+</body>
+</html>
