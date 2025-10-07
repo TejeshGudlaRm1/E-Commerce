@@ -29,7 +29,7 @@ function handleLogin(event) {
     // --- Hardcoded User Check ---
     if (email === "user@gmail.com" && password === "user@gmail.com") {
         console.log("User login successful");
-        window.location.href = 'index1.html'; // Redirect to home page
+        window.location.href = 'index.html'; // Redirect to home page
         return;
     }
 
@@ -39,7 +39,7 @@ function handleLogin(event) {
 
     if (user) {
         console.log("Signed up user login successful");
-        window.location.href = 'index1.html'; // Redirect to home page
+        window.location.href = 'index.html'; // Redirect to home page
     } else {
         errorMessage.textContent = 'Invalid email or password.';
     }
